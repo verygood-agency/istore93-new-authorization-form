@@ -98,8 +98,11 @@
   margin: 0;
 }
 
-.header-user-nav li a {
+.header-user-nav a {
   justify-content: flex-start !important;
+}
+.header-user-nav .btn {
+  justify-content: center !important;
 }
 
 .header-user-nav--mod {
