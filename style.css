@@ -149,3 +149,22 @@
     padding-bottom: 3rem;
   }
 }
+.personal-account__form-item--mod {
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.restore-password {
+  color: #ec008c !important;
+  display: block;
+  margin-top: 5px;
+}
+
+.modal-header .btn-close {
+  align-self: baseline;
+}
+.modal-header .subtitle {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.7;
+}

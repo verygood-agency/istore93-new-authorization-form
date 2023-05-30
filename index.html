@@ -19361,7 +19361,7 @@
       </div>
     </div>
 
-    <!-- модальное окно  -->
+    <!-- модальное окно Авторизация-->
     <div class="region region-login-form">
       <div
         class="views-exposed-form block block-search-page block-views block-views-exposed-filter-blocksearch-page modal fade"
@@ -19390,9 +19390,15 @@
                       </div>
                       <div class="personal-account__form-item">
                         <label class="form-label">Новый пароль:<small>*</small></label>
-                        <input class="js-text-full text-full required form-control" type="password" name="NEW_PASSWORD"
+                        <div class="input-wrap">
+                          <input class="js-text-full text-full required form-control" type="password" name="NEW_PASSWORD"
                           placeholder="Введите пароль" autocomplete="off" required>
+                          <a href="#" class="restore-password" data-bs-toggle="modal"
+                          data-bs-target="#block-restore-password">Забыли пароль?</a>
+                        </div>
+
                       </div>
+
                       <div class="user-login-form__button">
 
 
@@ -19425,8 +19431,61 @@
         </div>
       </div>
     </div>
+    <!-- КОНЕЦ модальное окно Авторизация-->
+
+    <!-- модальное окно Забилы пароль-->
+    <div class="region region-login-form">
+      <div
+        class="views-exposed-form block block-search-page block-views block-views-exposed-filter-blocksearch-page modal fade"
+        id="block-restore-password" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+
+            <div class="modal-content__wrapper">
+
+              <div class="modal-header">
+                <div class="modal-header__wrapper">
+                  <h5 class="modal-title">Забыли пароль</h5>
+                <p class="subtitle">Забыли свой пароль? Укажите свой Email или имя пользователя. Ссылку на создание нового пароля вы получите по электронной почте.</p>
+                </div>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <form method="post">
+
+                  <div class="user-login-form">
+
+                    <div class="user-login-form__grid">
+
+                      <div class="personal-account__form-item personal-account__form-item--mod">
+                        <label class="form-label">Имя пользователя или Email:</label>
+                        <input class="js-text-full text-full required form-control" type="text" name="restore"
+                          placeholder="Введите данные" required>
+                      </div>
+                      <button class="btn btn-pink" type="submin" name="save" value="Сохранить">Сброс пароля</button>
+
+                    </div>
+                  </div>
+
+              </div>
+              </form>
+            </div>
+            <div class="modal-content__footer">
+              <div class="modal-content__wrapper">
+                <span class="text">Еще нет учетной записи?</span>
+              <a href="http://istore.tw1.ru/auth/" class="btn btn-transparent">Регистрация</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <!-- КОНЕЦ модальное окно  -->
+    <!-- КОНЕЦ модальное окно Забилы пароль-->
+
     <div class="region region-modal-forms">
       <div
         class="contact-message-found-cheaper-form contact-message-form contact-form modal fade block block-contact-block"
